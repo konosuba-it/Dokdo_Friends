@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>이 멋진 IT에 축복을!</title>
+<!--uikit css 불러오기-->
+<link rel="stylesheet" href="https://common.gaon.xyz/css/uikit/uikit.min.css" />
+    <nav class="uk-navbar-container">
+        <div class="uk-navbar-left">
+            <a class="uk-navbar-item uk-logo" href="../index.html">독도 프렌즈</a>
+            <div uk-navbar>
+              <ul class="uk-navbar-nav">
+                <li>
+                    <a href="#">아름다운 독도</a>
+                <div class="uk-navbar-dropdown">
+                  <ul class="uk-nav uk-navbar-dropdown-nav">
+                    <li class="uk-nav-header">소개</li>
+                    <li><a href="../where/index.html">독도는 어디에 있어요?</a></li>
+                    <li><a href="#">팀원 소개</a></li>
+                    <li><a href="#">도움을 주신 분들</a></li>
+                  </ul>
+                </div>
+                </li>
+                <li>
+                  <a href="#">참여하기</a>
+                  <div class="uk-navbar-dropdown">
+                  <ul class="uk-nav uk-navbar-dropdown-nav">
+                    <li class="uk-nav-header">Active</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li class="uk-nav-header">Header</li>
+                    <li><a href="#">Item</a></li>
+                    <li class="uk-nav-header">프로젝트 과정</li>
+                    <li><a href="#">프로젝트 진행 과정</a></li>
+                  </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">사용된 자료들</a>
+                  <div class="uk-navbar-dropdown">
+                  <ul class="uk-nav uk-navbar-dropdown-nav">
+                    <li class="uk-nav-header">독도 관련 자료</li>
+                    <li><a href="../use_data/image.html">이미지</a></li>
+                    <li><a href="../use_data/info.html" target="_blank">정보</a></li>
+                    <li class="uk-nav-header">Html 외부 자료</li>
+                    <li><a href="../external_data/html_info.html">찾아보기</a></li>
+                    <li class="uk-nav-header">CSS 외부 자료</li>
+                    <li><a href="../external_data/css_info.html">찾아보기</a></li>
+                    <li class="uk-nav-header">javascript 외부 자료</li>
+                    <li><a href="../external_data/js_info.html">찾아보기</a></li>
+                  </ul>
+                    </div>
+                </li>
+                <li>
+                  <a href="#"><span class="uk-icon uk-margin-small-right" uk-icon="icon: github"></span>팀 소개</a>
+                  <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                    <li class="uk-nav-header">팀 소개</li>
+                    <li><a href="https://konosuba-it.tk" target="_blank">소개 페이지 이동</a></li>
+                    <li class="uk-nav-header">깃허브</li>
+                    <li><a href="https://github.com/konosuba-it/konosuba-it" target="_blank">팀 깃허브 페이지</a></li>
+                    <li><a href="https://github.com/konosuba-it/Dokdo_Friends" target="_blank">독도 프로젝트 깃허브 페이지</a></li>
+                  </ul>
+                  </div>
+                </li>
+            </div>
+        </div>
+    </nav>
+</head>
+<!--uikit js 불러오기-->
+<script src="https://common.gaon.xyz/js/uikit/uikit.min.js"></script>
+<!--uikit icon js 불러오기-->
+<script src="https://common.gaon.xyz/js/uikit/uikit-icons.min.js"></script>
+<!--Jquery 불러오기-->
+<script src="https://common.gaon.xyz/js/jquery/jquery-3.3.1.js"></script>
+<body>
+    <br>
+    <br>
+    <br>
+    <div style="margin-left: 70px; margin-right: 70px;">
+        <center>
+        <script src="https://common.gaon.xyz/js/search/search.js"></script>
+
+            <div id="container">
+                <center>
+                <div id="input-form">
+                    자료명 : <input style="vertical-align:middle; width: 250px" class="uk-search-input" id="keyword" type="text" placeholder="Search...">
+                </div>
+                </center>
+        
+                <table id="user-table" class="uk-table uk-table-striped">
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>자료명</th>
+                            <th>의존 자료</th>
+                            <th>기타</th>
+                        </tr>
+                    </thead>
+        
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><span uk-icon="link"></span><a href="http://www.menucool.com/javascript-image-slider" target="_blank">javascript image slider</a></td>
+                            <td>없음</td>
+                            <td><xmp><!DOCTYPE></xmp> 선언 필요</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><span uk-icon="link"></span><a href="https://getuikit.com" target="_blank">uikit</a></td>
+                            <td>uikit css</td>
+                            <td>부트스트랩 같은 웹 디자인 프레임워크.<br>uikit css와 같이 사용해야 한다.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </center>
+</body>
+</html>
