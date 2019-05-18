@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
-<head>
 <title>자랑스러운 대한민국의 영토, 독도</title>
 <!--meta 태그 시작-->
 <meta charset="utf-8">
 <!--meta 태그 끝-->
 <!--uikit css 불러오기-->
 <link rel="stylesheet" href="https://common.gaon.xyz/css/uikit/uikit.min.css" />
-</head>
+</html>
 <body>
 <!--메뉴 시작-->
 <nav class="uk-navbar-container">
@@ -71,53 +70,59 @@
      </div>
 </nav>
 <!--메뉴 끝-->
-    <br>
-    <br>
-    <br>
-    <div style="margin-left: 70px; margin-right: 70px;">
-        <center>
-        <script src="https://common.gaon.xyz/js/search/search.js"></script>
-            <div id="container">
-
-                <center>
-                <div id="input-form">
-                    자료명 : <input style="vertical-align:middle; width: 250px" class="uk-search-input" id="keyword" type="text" placeholder="Search...">
-                </div>
-                </center>
-        
-                <table id="user-table" class="uk-table uk-table-striped">
-                    <thead>
-                        <tr>
-                            <th>번호</th>
-                            <th>자료명</th>
-                            <th>의존 자료</th>
-                            <th>기타</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td><span uk-icon="link"></span><a href="http://www.menucool.com/javascript-image-slider" target="_blank">javascript image slider</a></td>
-                            <td>없음</td>
-                            <td><xmp><!DOCTYPE></xmp> 선언 필요</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td><span uk-icon="link"></span><a href="https://webruden.tistory.com/107" target="_blank">jquery contains() 메서드</a></td>
-                            <td>jquery</td>
-                            <td>jquery의 메서드로 구현하여 한글자를 입력할때마다 해당되는 내용을 보여준다.<br>이 페이지도 해당 기능으로 구현되었다.</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td><span uk-icon="link"></span><a href="https://getuikit.com" target="_blank">uikit icons</a></td>
-                            <td>없음</td>
-                            <td>-</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </center>
-    </div>
+<br>
+<br>
+<br>
+<div style="margin-left: 70px; margin-right: 70px;">
+<center>
+<h2>사이트에 적용된 HTML 자료들을 소개합니다!</h2>
+<p>본 사이트에 적용된 HTML을 빠르게 검색해 보실 수 있습니다. 자료명만 검색 가능합니다.</p>
+</center>
+<hr>
+<br>
+<center>
+<p>검색: &nbsp;&nbsp;&nbsp; <input style="vertical-align:middle; width: 250px" class="uk-search-input" id='txtFilter' type='text' onkeyup='{filter();return false}' onkeypress='javascript:if(event.keyCode==13){ filter(); return false;}' placeholder="Search..."></p>
+</center>
+</div>
+<br>
+<div style="margin-left: 70px; margin-right: 70px;">
+<table id="user-table" class="uk-table uk-table-striped">
+    <thead>
+        <tr>
+            <th>번호</th>
+            <th>자료명</th>
+            <th>의존 자료</th>
+            <th>기타/설명</th>
+        </tr>
+    </thead>
+    <tbody id='languageTBody'>
+        <tr name='javascript image slider'>
+            <td>1</td>
+            <td><span uk-icon="link"></span><a href="http://www.menucool.com/javascript-image-slider" target="_blank">javascript image slider</a></td>
+            <td>없음</td>
+            <td><xmp><!DOCTYPE></xmp> 선언 필요</td>
+        </tr>
+        <tr name='jquery selector'>
+            <td>2</td>
+            <td><span uk-icon="link"></span><a href="https://storyofdream.tistory.com/100" target="_blank">jquery selector</a></td>
+            <td>jquery</td>
+            <td>jquery의 selector를 사용하여 한글자를 입력할때마다 해당되는 내용을 보여준다.<br>이 페이지도 해당 기능으로 구현되었다.<br>기존 방식의 jquery contains 방식은 되지 않을때가 있어서 이 기능으로 교체했다.</td>
+        </tr>
+        <tr name='uikit icons'>
+            <td>3</td>
+            <td><span uk-icon="link"></span><a href="https://getuikit.com" target="_blank">uikit icons</a></td>
+            <td>없음</td>
+            <td>다양한 아이콘들을 삽입 할 수 있다.</td>
+        </tr>
+		<tr name='퀴즈 기능'>
+            <td>4</td>
+            <td><span uk-icon="link"></span><a href="http://www.gyool.net/xe/blog/20344" target="_blank">퀴즈 기능</a></td>
+            <td>퀴즈 정답 부분 js</td>
+            <td>퀴즈 기능으로 각 칸의 내용을 확인해 정답인지 확인한다.</td>
+        </tr>
+    </tbody>
+</table>
+</div>
 <!--푸터-->
 <br>
 <hr>
@@ -146,6 +151,8 @@
 <script src="https://common.gaon.xyz/js/uikit/uikit-icons.min.js"></script>
 <!--Jquery 불러오기-->
 <script src="https://common.gaon.xyz/js/jquery/jquery-3.3.1.js"></script>
+<!--검색 js 불러오기-->
+<script src="./search.js"></script>
 <!--script 불러오기 완료-->
 </body>
 </html>
