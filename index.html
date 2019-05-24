@@ -10,6 +10,9 @@
 <!--meta 태그 끝-->
 <!--uikit css 불러오기-->
 <link rel="stylesheet" href="https://common.gaon.xyz/css/uikit/uikit.min.css" />
+<!--이미지 슬라이더-->
+<link href="https://common.gaon.xyz/css/image_slider/js-image-slider.css" rel="stylesheet"/>
+<link href="https://common.gaon.xyz/css/image_slider/generic.css" rel="stylesheet"/>
 </head>
 <body>
 <!--메뉴 시작-->
@@ -76,7 +79,17 @@
 </nav>
 <!--메뉴 끝-->
 <br>
-<iframe src="./main_load/load.html" frameborder="0" width="100%" height="370px"></iframe>
+<!--이미지 슬라이드-->
+<div id="sliderFrame">
+  <div id="slider">
+    <a href="https://commons.wikimedia.org/wiki/File:Dokdo-ROK-Flag.JPG" target="_blank">
+      <img src="https://withdokdo.tk/img/01.jpg" alt="독도 전경 (BY-SA 3.0 Unported)"/></a>
+      <a href="https://commons.wikimedia.org/wiki/File:Dokdo_20080628-panorama.jpg" target="_blank">
+        <img src="https://withdokdo.tk/img/02.jpg" alt="독도 파노라마 (BY-SA 2.0 KR)"/></a>
+  </div>
+</div>
+<br>
+<!--이미지 슬라이드 끝-->
 <hr>
   <div style="margin-left: 100px; margin-right: 100px;">
 <iframe src="./main_load/load1.html" frameborder="0" width="100%" height="500px"></iframe>
@@ -109,6 +122,8 @@
 <script src="https://common.gaon.xyz/js/uikit/uikit-icons.min.js"></script>
 <!--Jquery 불러오기-->
 <script src="https://common.gaon.xyz/js/jquery/jquery-3.3.1.js"></script>
+<!--이미지 슬라이더-->
+<script src="https://common.gaon.xyz/js/image_slider/js-image-slider.js"></script>
 <!--script 불러오기 완료-->
 </body>
 </html>
