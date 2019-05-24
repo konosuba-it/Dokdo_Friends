@@ -132,6 +132,18 @@
 <br>
 <br>
 <!--푸터 끝-->
+<!--새로고침 악용 방지-->
+<script>
+function doNotReload(){ 
+    if( (event.ctrlKey == true && (event.keyCode == 78 || event.keyCode == 82)) || (event.keyCode == 116) ) { 
+        event.keyCode = 0; 
+        event.cancelBubble = true; 
+        event.returnValue = false; 
+    } 
+} 
+document.onkeydown = doNotReload;
+</script>
+<!--새로고침 악용 방지 끝-->
 <!--script 불러오기-->
 <!--uikit js 불러오기-->
 <script src="https://common.gaon.xyz/js/uikit/uikit.min.js"></script>
