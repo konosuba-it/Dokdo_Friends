@@ -15,7 +15,7 @@
         if(val == (document.getElementById("print5").value))
 
             {alert("열심히 공부했군요? 모두 다 맞혔습니다! 대단합니다!");
-            window.open('https://withdokdo.tk/wow');
+            window.open('../wow/index.html');
             }
                 else{alert("5번이 오답입니다.");}
                 }
