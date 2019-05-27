@@ -112,6 +112,19 @@
 <!--퀴즈 정답 확인 끝-->
  </form>
  </div>
+ <!--F12 개발자 도구 사용 불가능 기능-->
+ <script type="text/javascript">
+  // F12 버튼 방지
+  $(document).ready(function(){
+      $(document).bind('keydown',function(e){
+          if ( e.keyCode == 123 /* F12 */) {
+              e.preventDefault();
+              e.returnValue = false;
+          }
+      });
+  });
+</script>
+<!--F12 개발자 도구 사용 불가능 기능 끝-->
 <br>
 <br>
 <br>
