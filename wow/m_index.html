@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<!--모바일 브라우저 상단 색 지정-->
+	<meta name="theme-color" content="#26ff8f">
+	<!--Bootstrap CSS 로드-->
+	<link rel="stylesheet" href="https://common.gaon.xyz/css/bootstrap/bootstrap.min.css">
+	<!--FontAwesome CSS 로드-->
+	<link rel="stylesheet" href="../css/fontawesome/all.min.css">
+</head>
+<body>
+	<!--메뉴 시작-->
+	<nav class="navbar navbar-light" style="background-color: #26ff8f;">
+	<a class="navbar-brand" href="../m_index.html">독도 프렌즈</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;아름다운 독도</a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      	<span class="navbar-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소개</span>
+          <a class="dropdown-item" href="../where/m_index.html">독도는 어디에 있어요?</a>
+          <a class="dropdown-item" href="../name/m_index.html">독도의 명칭</a>
+		  <div class="dropdown-divider"></div>
+          <span class="navbar-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;독도의 동식물과 자원</span>
+          <a class="dropdown-item" href="../animals/m_index.html">다양한 동식물</a>
+		  <a class="dropdown-item" href="../resources/m_index.html">독도의 자원들</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="far fa-comment-dots"></i>&nbsp;&nbsp;함께해요</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <span class="navbar-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소셜 기능</span>
+          <a class="dropdown-item" href="../comments/m_index.html">소셜 댓글</a>
+          <div class="dropdown-divider"></div>
+          <span class="navbar-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;독도 관련</span>
+          <a class="dropdown-item" href="../song/m_index.html">독도는 우리땅 노래</a>
+          <a class="dropdown-item" href="../quiz/m_index.html">독도 퀴즈</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-database"></i>&nbsp;&nbsp;사용한 자료들</a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      	<span class="navbar-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;독도 관련 자료</span>
+          <a class="dropdown-item" href="../use_data/m_image.html">이미지</a>
+          <a class="dropdown-item" href="../use_data/m_info.html">정보</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <span class="navbar-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;외부 자료들</span>
+          <a class="dropdown-item" href="../external_data/m_html_info.html">HTML 외부 자료</a>
+          <a class="dropdown-item" href="../external_data/m_css_info.html">CSS 외부 자료</a>
+          <a class="dropdown-item" href="../external_data/m_js_info.html">JavaScript 외부 자료</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fab fa-github-alt"></i>&nbsp;&nbsp;팀 소개</a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      	<span class="navbar-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;팀 소개</span>
+	      <a class="dropdown-item" href="https://konosuba-it.tk/index.html" target="_blank">소개 페이지 이동</a>
+	      <div class="dropdown-divider"></div>
+          <span class="navbar-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;깃허브</span>
+          <a class="dropdown-item" href="https://github.com/konosuba-it/konosuba-it" target="_blank">팀 깃허브 페이지</a>
+          <a class="dropdown-item" href="https://github.com/konosuba-it/Dokdo_Friends" target="_blank">독도 프로젝트 깃허브 페이지</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+	<!--메뉴 끝-->
+	<br>
+	<!--현재 날짜 불러오기-->
+	<script>
+	var d = new Date();
+        var currentDate = d.getFullYear() + "년 " + ( d.getMonth() + 1 ) + "월 " + d.getDate() + "일";
+        var currentTime = d.getHours() + "시 " + d.getMinutes() + "분 " + d.getSeconds() + "초";
+        var result = document.getElementById("time-result");
+	</script>
+	<!--닉네임 입력-->
+	<script>
+	var nickname;
+	nickname = prompt("닉네임을 입력해 주세요")
+	</script>
+	<!--확인서-->
+		<center>
+			<div id="capture">
+			<h2>확인서</h2>
+			<p>독도 프렌즈에 있는 총 다섯 문제의 독도 퀴즈를 모두 맞추신 분께 확인서를 드립니다.</p><br>
+			<img src="./check.jpg" width="500px"><br><br><br>
+			<script>
+				document.write("'"+ nickname+"' 님은 독도 프렌즈의 퀴즈를 모두 풀어 맞췄습니다<BR>");
+				document.write( currentDate + " " + currentTime + " 에 문제를 풀었다는 것을 이 확인서가 인증합니다<BR>");
+			</script>
+			</div><br><br>
+			<h3>확인서를 SNS에 공유해 보세요! </h3>
+			<script>document.write("'"+ nickname+"' 님 확인서를 SNS에 공유를 하여 독도에 대해 알려 보세요!");</script>
+			<p>아래의 캡쳐 버튼을 누르면 확인서가 이미지로 생성됩니다. 이미지를 꾹 눌러 저장하신 뒤 SNS에 공유해 보세요.</p>
+			<br>
+			<button type="button" class="btn btn-primary btnScreenShot" id="btnScreenShot">캡쳐</button>
+			<br>
+			<hr>
+			<br>
+			<br>
+			<div id="img-out"></div>
+		</center>
+	<br>
+	<br>
+	<!--확인서 끝-->
+	<!--푸터-->
+	<div style="color:white; background-color:#484848; padding:20px;">
+		<p>독도 프렌즈는 독도를 사랑합니다.<br>본 사이트에 사용된 자료/이미지 등은<br>'사용한 자료들' 메뉴에서 확인해 보실 수 있습니다.</p>
+	<div>
+	<!--푸터 끝-->
+	<!--새로고침 악용 방지-->
+	<script>
+	function doNotReload(){ 
+		if( (event.ctrlKey == true && (event.keyCode == 78 || event.keyCode == 82)) || (event.keyCode == 116) ) { 
+			event.keyCode = 0; 
+			event.cancelBubble = true; 
+			event.returnValue = false; 
+		} 
+	} 
+document.onkeydown = doNotReload;
+</script>
+<!--새로고침 악용 방지 끝-->
+	<!--Script 로드-->
+	<script src="https://common.gaon.xyz/js/jquery/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://common.gaon.xyz/js/popper.js/popper-1.12.9.min.js"></script>
+	<!--BootStrap-->
+	<script src="https://common.gaon.xyz/js/bootstrap/bootstrap.min.js"></script>
+	<!--캡쳐 스크립트-->
+	<script src="https://common.gaon.xyz/js/html2canvas/html2canvas.min.js"></script>
+	<!--IE에서 캡쳐 안되는 오류 패치-->
+	<script src="https://common.gaon.xyz/js/es6-promise/es6-promise.auto.min.js"></script>
+	<script src="capture.js"></script>
+</body>
+</html>
