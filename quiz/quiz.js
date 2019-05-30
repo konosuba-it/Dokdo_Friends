@@ -11,7 +11,7 @@
     {var val ="리앙쿠르 암초"
     if(val == (document.getElementById("print4").value))
         
-        {var val ="가스하이드레이트"
+        {var val ="메탄 하이드레이트"
         if(val == (document.getElementById("print5").value))
 
             {var val ="이사부"
