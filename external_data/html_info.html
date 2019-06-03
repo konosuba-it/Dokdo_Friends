@@ -10,6 +10,28 @@
 <!--meta 태그 끝-->
 <!--uikit css 불러오기-->
 <link rel="stylesheet" href="https://common.gaon.xyz/css/uikit/uikit.min.css" />
+<!--접속 언어별 페이지 이동-->
+<script>
+<!--
+var type = navigator.appName
+var lang;
+if (type=="Netscape")
+    lang = navigator.language
+else
+    lang = navigator.userLanguage
+
+// 국가코드에서 앞 2글자만 자름
+var lang = lang.substr(0,2)
+
+// 한글인 경우 한글페이지로 이동
+if (lang == "ko")
+// 다른 언어인 경우 영문페이지로 이동
+else
+    window.location.replace('/en/exernal_data/html_info.html')
+
+//-->
+</script>
+<!--접속 언어별 페이지 이동 끝-->
 <!--모바일 페이지 이동-->
 <script>
   /**
