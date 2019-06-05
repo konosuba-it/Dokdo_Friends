@@ -22,10 +22,8 @@ else
 // 국가코드에서 앞 2글자만 자름
 var lang = lang.substr(0,2)
 
-// 한글인 경우 한글페이지로 이동
-if (lang == "ko")
 // 다른 언어인 경우 영문페이지로 이동
-else
+if (lang != "ko")
     window.location.replace('/en/external_data/m_js_info.html')
 
 //-->
