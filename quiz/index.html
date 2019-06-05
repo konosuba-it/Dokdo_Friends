@@ -155,14 +155,14 @@ if (lang != "ko")
  <!--F12 개발자 도구 사용 불가능 기능-->
  <script>
   // F12 버튼 방지
-  $(document).ready(function(){
-      $(document).bind('keydown',function(e){
-          if ( e.keyCode == 123 /* F12 */) {
-              e.preventDefault();
-              e.returnValue = false;
-          }
-      });
-  });
+function doNotReload(){ 
+    if( (event.ctrlKey == true && (event.keyCode == 17 || event.keyCode == 16 || event.keyCode == 73)) || (event.keyCode == 123) ) { 
+        event.keyCode = 0; 
+        event.cancelBubble = true; 
+        event.returnValue = false; 
+    } 
+} 
+document.onkeydown = doNotReload;
 </script>
 <!--F12 개발자 도구 사용 불가능 기능 끝-->
 <br>
